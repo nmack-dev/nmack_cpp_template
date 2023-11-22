@@ -3,7 +3,6 @@ import subprocess
 
 # Set the path to your Premake executable
 dirname = os.path.dirname(__file__)
-filename = os.path.join(dirname, 'relative/path/to/file/you/want')
 premake_path = os.path.join(dirname, 'premake/premake5.exe')
 
 # Run Premake to generate project files
