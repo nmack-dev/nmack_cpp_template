@@ -18,7 +18,7 @@ def main():
     os.makedirs('build', exist_ok=True)
     os.chdir('build')
     subprocess.run(['cmake', '..'], shell=True, check=True)
-    subprocess.run(['cmake', '--build', '.'], shell=True, check=True)
+    subprocess.run(['cmake', '--build', '.', '--target', 'clean'], shell=True, check=True)
 
     # Return to the project root
     os.chdir('../../..')

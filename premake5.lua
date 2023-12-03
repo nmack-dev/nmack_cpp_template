@@ -25,6 +25,7 @@ workspace "MyProject"
         kind "StaticLib"
         -- recursively glob .h and .cpp files in the lib directory
         files { "include/**.h", "src/**.cpp" }
+        includedirs { "include" }
 
     project "GoogleTest"
         kind "StaticLib"
